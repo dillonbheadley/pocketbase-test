@@ -1,0 +1,4 @@
+{{ block "body" . }}
+<h1>Hi from index <span id="count">{{ . }}</span></h1>
+<button hx-post="/count-up" hx-target="#count">count</button>
+{{end}}

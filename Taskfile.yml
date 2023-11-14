@@ -1,0 +1,12 @@
+version: "3"
+
+# interval: 500ms
+
+tasks:
+  default:
+    # watch: true
+    sources:
+      - "**/*.go"
+      - "**/*.html"
+    cmds:
+      - go run main.go serve
